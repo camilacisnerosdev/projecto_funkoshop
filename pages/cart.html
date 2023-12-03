@@ -2,107 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart | FunkoShop</title>
 </head>
 <body>
-    <header> <!--Inicio Header-->
+    <header>
         <nav>
             <picture>
                 <a href="./index.html">
-             <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca FunkoShop">
+                    <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca FunkoShop">
                 </a>
             </picture>
-             <ul>
-                <li>
-                    <a href="./pages/shop.html">Shop</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./pages/login.html">Login</a>
-                </li>
+            <ul>
+                <li><a href="./pages/shop.html">Shop</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/login.html">Login</a></li>
                 <li>
                     <a href="./pages/cart.html">Carrito</a>
-                        <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
+                    <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
                 </li>
-             </ul>
-
-        </nav>
-   </header> <!--Fin Header-->
-   <main>
-  <h1>CARRITO DE COMPRAS</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>DETALLE DEL PRODUCTO</th>
-        <th>CANTIDAD</th>
-        <th>TOTAL</th>
-        <th>-</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-            <picture><img src="" alt=""></picture>
-            <h6>BABY YODA BLUEBALL</h6>
-            <P>STAR WARS</P>
-            <p>precio: $ 1799,99</p>
-        </td>
-        <td><input type="number" id="minimo" name="minimo" placeholder="0" step="any" /></td>
-        <td>$ 3599,98</td>
-        <td>(X)</td>
-      </tr>
-      <tr>
-        <td>
-            <picture><img src="" alt=""></picture>
-            <h6>PIDGEOTTO</h6>
-            <P>POKEMON</P>
-            <p>Precio unitario: $ 1799,99</p>
-        </td>
-        <td><input type="number" id="minimo" name="minimo" placeholder="0" step="any" /></td>
-        <td>$ 1799,99</td>
-        <td>(X)</td>
-      </tr>
-    </tbody>
-  </table>
-<div>
-    <h2>RESUMEN</h2>
-    <table>
-        <tr>
-          <td>Cantidad de elementos</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>Subtotal</td>
-          <td>$ 5.399,97</td>
-        </tr>
-        <tr>
-          <td>ENVIO</td>
-          <td>$ 0,00</td>
-        </tr>
-        <tr>
-          <td>TOTAL</td>
-          <td>$ 5.399,97</td>
-        </tr>
-      </table>
-      
-  <a href=""><button>IR A PAGAR</button></a> <br>
-</div>
-   </main>
-   <footer>
-    <section>
-        <nav>
-            <ul>
-                <li><a href="./pages/shop.html"></a>SHOP</li>
-                <li><a href="./pages/registrarse.html"></a>REGISTRARSE</li>
-                <li><a href="./pages/login.html"></a>LOGIN</li>
-                <li><a href="./pages/contacto.html"></a>CONTACTO</li>
             </ul>
-            <picture><img src="./img/branding/isotype.svg" alt="Isologotipo de la marca Funkoshop"></picture>
         </nav>
-    </section>
-    <p>All rights reserved 2023 - Funkoshop</p>
-</footer>
+    </header>
+
+    <main>
+        <h1>CARRITO DE COMPRAS</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>DETALLE DEL PRODUCTO</th>
+                    <th>CANTIDAD</th>
+                    <th>TOTAL</th>
+                    <th>-</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <picture><img src="" alt="Imagen del producto"></picture>
+                        <h6>BABY YODA BLUEBALL</h6>
+                        <p>STAR WARS</p>
+                        <p>precio: $ 1799,99</p>
+                    </td>
+                    <td><label for="minimo">Cantidad:</label><input type="number" id="minimo" name="minimo" placeholder="0" step="any" /></td>
+                    <td>$ 3599,98</td>
+                    <td>(X)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <picture><img src="" alt="Imagen del producto"></picture>
+                        <h6>PIDGEOTTO</h6>
+                        <p>POKEMON</p>
+                        <p>Precio unitario: $ 1799,99</p>
+                    </td>
+                    <td><label for="minimo2">Cantidad:</label><input type="number" id="minimo2" name="minimo2" placeholder="0" step="any" /></td>
+                    <td>$ 1799,99</td>
+                    <td>(X)</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div>
+            <h2>RESUMEN</h2>
+            <table>
+                <tr>
+                    <td>Cantidad de elementos</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$ 5.399,97</td>
+                </tr>
+                <tr>
+                    <td>ENVIO</td>
+                    <td>$ 0,00</td>
+                </tr>
+                <tr>
+                    <td>TOTAL</td>
+                    <td>$ 5.399,97</td>
+                </tr>
+            </table>
+            
+            <a href="#"><button>IR A PAGAR</button></a> <br>
+        </div>
+    </main>
+
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="./pages/shop.html">SHOP</a></li>
+                    <li><a href="./pages/registrarse.html">REGISTRARSE</a></li>
+                    <li><a href="./pages/login.html">LOGIN</a></li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                </ul>
+                <picture><img src="./img/branding/isotype.svg" alt="Isologotipo de la marca Funkoshop"></picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2023 - Funkoshop</p>
+    </footer>
 </body>
 </html>
